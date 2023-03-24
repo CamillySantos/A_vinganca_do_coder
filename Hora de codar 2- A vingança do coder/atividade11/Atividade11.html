@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+    
+       /* Uma micro calculadora Escreva um programa para ler
+        2 valores inteiros informados pelo usuário e uma das
+         seguintes operações a serem executadas (codificada
+         da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão,
+         4.Multiplicação).O programa deve calcular e escrever
+         o resultado dessa operação sobre os dois valores lidos.
+         Observação: Considere que só serão lidos os valores 1,
+         2, 3 ou 4 para as operações*/
+
+         function inicio() {
+         var num1 = parseInt(prompt("Digite um valor"));
+         var num2 = parseInt(prompt("Digíte mais um valor"));
+         var escolha = parseInt(prompt("Escolha uma operação 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação"));
+         }
+
+         if (escolha === 1) {
+            adicao();
+         } else if (escolha === 2) {
+            subtracao();
+         } else if (escolha === 3) {
+            divisao();
+         } else if(escolha === 4) {
+            multiplicacao();
+         }
+
+         function adicao() {
+            var soma = (num1 + num2);
+            alert("A soma dos valores são " + soma);
+            inicio();
+         }
+
+
+         function subtracao() {
+            var sub = (num1 - num2);
+            alert("A subtração dos valores é " + sub);
+            inicio();
+         }
+
+         function divisao() {
+            var div = (num1 / num2);
+            alert("A divisão dos valores é " + div);
+            inicio();
+         }
+
+         function multiplicacao() {
+            var multi = (num1 * num2);
+            alert("A multiplicação dos valores é " + multi);
+            inicio();
+         }
+
+
+    
+    </script>
+    
+    <title>Atividade 11</title>
+</head>
+<body>
+    
+</body>
+</html>

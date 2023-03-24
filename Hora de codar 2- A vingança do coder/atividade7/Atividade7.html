@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        /*Faça um programa que leia 6 números que o usuário
+         vai informar. Todos os números lidos com valor
+          inferior a 72 devem ser somados. Escreva o valor
+           final da soma efetuada e também todos valores que
+            o usuário informou.*/
+
+       // solicita ao usuário para inserir 6 números
+       var numeros = [];
+       for (var i = 1; i <= 6; i++) {
+       numeros.push(parseInt(prompt("Digite o número " + i)));
+       }
+
+       // inicializa a soma total e uma lista para armazenar os números menores que 72
+       var soma = 0;
+       var menoresQue72 = [];
+
+       // itera através de cada número e adiciona à soma total, se for menor que 72
+       for (var i = 0; i < numeros.length; i++) {
+       if (numeros[i] < 72) {
+       menoresQue72.push(numeros[i]);
+       soma += numeros[i];
+       }
+    } 
+
+      // exibe o resultado para o usuário
+      alert("Os números informados foram: " + numeros.join(", ") + "\n" + "Os números menores que 72 foram: " + menoresQue72.join(", ") + "\n" + "A soma dos números menores que 72 é: " + soma);
+
+
+
+    </script>
+
+    <title>Atividade 7</title>
+</head>
+<body>
+    
+</body>
+</html>

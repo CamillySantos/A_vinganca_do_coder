@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        /*Faça um programa para ler 3 valores (considere que não serão informados valores iguais)
+         e escrever o maior deles.*/
+
+         var primeiro_numero = prompt("Digite um número");
+         var segundo_numero = prompt("Digite outro número");
+         var terceiro_numero = prompt("Digite mais um número");
+
+         if (primeiro_numero >= segundo_numero && primeiro_numero >= terceiro_numero) {
+            alert("O primeiro número é o maior " + primeiro_numero);
+         } else if (segundo_numero >= primeiro_numero && segundo_numero >= terceiro_numero) {
+            alert("O segundo número é o maior " + segundo_numero);
+         } else if (terceiro_numero >= primeiro_numero && terceiro_numero >= segundo_numero) {
+            alert("O terceiro número é o maior " + terceiro_numero);
+         } else {
+            alert("ERRO");
+         }
+    </script>
+    <title>Atividade 3</title>
+</head>
+<body>
+    
+</body>
+</html>
